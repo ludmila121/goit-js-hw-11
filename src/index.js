@@ -1,6 +1,6 @@
-//import './sass/main.scss';
+import './sass/main.scss';
 import SimpleLightbox from 'simplelightbox';
-//var debounce = require('debounce');
+var debounce = require('debounce');
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchImages } from './js/get-images';
@@ -18,16 +18,16 @@ let page = 1;
 const onScroll = debounce(() => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const gallerySize = galleryRef.getBoundingClientRect();
-
-    if(gallerySize.height - 700 < scrollTop) {
+    
+    if (gallerySize.height - 700 < scrollTop) {
         loadMorePictures();
-    }
-}, 200);
-
+      }
+    }, 200);
+    
 async function searchPicture(e) {
     e.preventDefault();
 
-    inputValue = searchInputRef.ariaValueMax.trim();
+    inputValue = searchInputRef.value.trim();
 
     if(!inputValue) {
         hideLoadMoreBtn();
@@ -37,7 +37,7 @@ async function searchPicture(e) {
 
     page =1;
     hideLoadMoreBtn();
-    cleadPage();
+    clearPage();
 
     try{
         const response = await fetchImages(inputValue, page);
