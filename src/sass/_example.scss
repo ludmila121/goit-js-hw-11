@@ -4,7 +4,7 @@ body {
 }
 
 .search-toolbar {
-  background-color: #4056b4;
+  background-color: rgb(34, 129, 38);;
   height: 15%;
 }
 
@@ -23,14 +23,14 @@ body {
   float: left;
   width: 300px;
   outline: none;
-  background: #f1f1f1;
+  background: #d3d306;
 }
 
 .search-form-button {
   float: left;
   width: 90px;
   padding: 10px;
-  background: #c3c2c2;
+  background: #1310d2;
   color: #000;
   font-size: 15px;
   border: none;
@@ -41,7 +41,7 @@ body {
 }
 
 .search-form-button:hover {
-  background: #c3c2c2ce;
+  background: #07d467ce;
 }
 
 .gallery {
@@ -71,7 +71,7 @@ img {
   width: 350px;
   font-size: 14px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #c3c2c2;
+  border-bottom: 1px solid #b3adad;
   border-left: 1px solid #c3c2c2;
   border-right: 1px solid #c3c2c2;
   border-bottom-left-radius: 5px;

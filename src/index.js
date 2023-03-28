@@ -104,7 +104,8 @@ function createMarkup(arr) {
 }
 
 const simpleLightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
+    animationSlide: false,
+    captionsData: 'alt',
   captionDelay: 250,
 });
 
