@@ -1,4 +1,4 @@
-import axios from 'axios';
+/* import axios from 'axios';
 
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 
@@ -12,4 +12,4 @@ const fetchImages = async (value, page) => {
     return response.data;
 };
 
-export {fetchImages };
+export {fetchImages }; */
